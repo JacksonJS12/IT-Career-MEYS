@@ -1,5 +1,5 @@
-/*.gitignore
+*.gitignore
 bin
 obj
 .vs
-/*.sln
+*.sln
