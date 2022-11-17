@@ -14,6 +14,10 @@ namespace P16.NumberToWords_100
             {
                 result += From1To9(inputNum);
             }
+            else if (inputNum < 20)
+            {
+                result = From10To19(inputNum);
+            }
             else if (inputNum < 100)
             {
                 int firstDigit = inputNum / 10;
@@ -79,14 +83,50 @@ namespace P16.NumberToWords_100
 
             return result;
         }
+        private static string From10To19(int inputNum)
+        {
+            var result = string.Empty;
+            switch (inputNum)
+            {
+                case 10:
+                    result = "ten";
+                    break;
+                case 11:
+                    result = "eleven";
+                    break;
+                case 12:
+                    result = "twelve";
+                    break;
+                case 13:
+                    result = "thirteen";
+                    break;
+                case 14:
+                    result = "fourteen";
+                    break;
+                case 15:
+                    result = "fifteen";
+                    break;
+                case 16:
+                    result = "sixteen";
+                    break;
+                case 17:
+                    result = "seventeen";
+                    break;
+                case 18:
+                    result = "eighteen";
+                    break;
+                case 19:
+                    result = "nineteen";
+                    break;
+            }
+
+            return result;
+        }
         private static string From10To90(int inputNum)
         {
             var result = string.Empty;
             switch (inputNum)
             {
-                case 1:
-                    result = "ten";
-                    break;
                 case 2:
                     result = "twenty";
                     break;

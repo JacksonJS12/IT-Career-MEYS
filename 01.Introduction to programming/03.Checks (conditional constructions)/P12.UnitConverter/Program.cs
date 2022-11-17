@@ -43,7 +43,7 @@ namespace P12.UnitConverter
                     break;
             }
 
-            var unit = string.Empty;
+            var unit = "m";
             switch (outputUnit)
             {
                 case "mm":
