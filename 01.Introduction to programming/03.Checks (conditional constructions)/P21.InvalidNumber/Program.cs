@@ -6,7 +6,12 @@ namespace P21.InvalidNumber
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var input = double.Parse(Console.ReadLine());
+
+            if (!(input >= 100 && input <= 200 || input == 0))
+            {
+                Console.WriteLine("invalid");
+            }
         }
     }
 }

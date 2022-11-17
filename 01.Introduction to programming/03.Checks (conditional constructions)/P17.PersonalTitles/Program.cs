@@ -6,7 +6,31 @@ namespace P17.PersonalTitles
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var age = double.Parse(Console.ReadLine());
+            var gender = char.Parse(Console.ReadLine());
+
+            if (gender == 'm')
+            {
+                if(age > 16)
+                {
+                    Console.WriteLine("Mr.");
+                }
+                else
+                {
+                    Console.WriteLine("Master");
+                }
+            }
+            else if(gender == 'f')
+            {
+                if (age > 16)
+                {
+                    Console.WriteLine("Ms.");
+                }
+                else
+                {
+                    Console.WriteLine("Miss");
+                }
+            }
         }
     }
 }

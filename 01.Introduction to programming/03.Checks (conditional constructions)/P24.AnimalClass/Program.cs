@@ -6,7 +6,25 @@ namespace P24.AnimalClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var animal = Console.ReadLine();
+
+            var res = string.Empty;
+            if (animal == "dog")
+            {
+                res = "mammal";
+            }
+            else if (animal == "crocodile" ||
+                     animal == "tortoise" ||
+                     animal == "snake")
+            {
+                res = "reptile";
+            }
+            else
+            {
+                res = "unknown";
+            }
+
+            Console.WriteLine(res);
         }
     }
 }
