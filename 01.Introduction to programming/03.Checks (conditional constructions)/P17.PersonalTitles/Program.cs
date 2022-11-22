@@ -11,7 +11,7 @@ namespace P17.PersonalTitles
 
             if (gender == 'm')
             {
-                if(age > 16)
+                if(age >= 16)
                 {
                     Console.WriteLine("Mr.");
                 }
@@ -22,7 +22,7 @@ namespace P17.PersonalTitles
             }
             else if(gender == 'f')
             {
-                if (age > 16)
+                if (age >= 16)
                 {
                     Console.WriteLine("Ms.");
                 }
