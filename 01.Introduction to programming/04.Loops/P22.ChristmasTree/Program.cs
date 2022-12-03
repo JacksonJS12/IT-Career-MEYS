@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P17.ChristmasTree
+namespace P22.ChristmasTree
 {
     internal class Program
     {

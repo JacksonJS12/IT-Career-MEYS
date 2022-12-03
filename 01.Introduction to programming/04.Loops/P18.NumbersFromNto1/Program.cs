@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P15.NumbersFromNto1
+namespace P18.NumbersFromNto1
 {
     internal class Program
     {

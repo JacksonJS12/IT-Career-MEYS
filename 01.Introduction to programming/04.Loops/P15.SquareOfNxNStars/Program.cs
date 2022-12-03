@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P13.SquareOfNxNStars
+namespace P15.SquareOfNxNStars
 {
     internal class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P14.TriangleOfDollar
+namespace P17.TriangleOfDollar
 {
     internal class Program
     {

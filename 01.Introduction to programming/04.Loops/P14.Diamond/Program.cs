@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P13.Diamond
+namespace P14.Diamond
 {
     internal class Program
     {
@@ -21,18 +21,18 @@ namespace P13.Diamond
             }
 
             int outerDashes = rowsCount / 2;
-                
+
             for (int i = 0; i < rowsCount; i++)
             {
-                for (int j = 0; j < outerDashes; j++) 
+                for (int j = 0; j < outerDashes; j++)
                     Console.Write('-');
 
                 Console.Write('*');
-                for (int j = 0; j < innerDashes; j++) 
+                for (int j = 0; j < innerDashes; j++)
                     Console.Write('-');
                 if (innerDashes >= 0) Console.Write('*');
 
-                for (int j = 0; j < outerDashes; j++) 
+                for (int j = 0; j < outerDashes; j++)
                     Console.Write('-');
 
                 Console.WriteLine();

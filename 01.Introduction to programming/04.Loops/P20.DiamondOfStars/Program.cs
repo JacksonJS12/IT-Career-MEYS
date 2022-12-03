@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P16.DiamondOfStars
+namespace P20.DiamondOfStars
 {
     internal class Program
     {

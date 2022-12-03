@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P15.SquareFrame
+namespace P19.SquareFrame
 {
     internal class Program
     {
@@ -12,9 +12,9 @@ namespace P15.SquareFrame
             {
                 for (int col = 0; col < n; col++)
                 {
-                    if (col == 0 || col == n-1)
+                    if (col == 0 || col == n - 1)
                     {
-                        if (row == 0 || row == n-1)
+                        if (row == 0 || row == n - 1)
                         {
                             res += $"+ ";
                         }

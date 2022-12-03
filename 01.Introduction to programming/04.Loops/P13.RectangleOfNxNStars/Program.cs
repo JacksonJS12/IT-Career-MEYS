@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P12.RectangleOfNxNStars
+namespace P13.RectangleOfNxNStars
 {
     internal class Program
     {

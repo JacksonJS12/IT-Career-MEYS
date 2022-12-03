@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P17.EvenPowerOf2
+namespace P23.EvenPowerOf2
 {
     internal class Program
     {
@@ -9,7 +9,7 @@ namespace P17.EvenPowerOf2
             var n = int.Parse(Console.ReadLine());
 
             var power = 1;
-            for (int i = 0; i <= n ; i+=2)
+            for (int i = 0; i <= n; i += 2)
             {
                 Console.WriteLine(power);
                 power *= 4;

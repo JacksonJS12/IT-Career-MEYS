@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P19.NumberInRange1_100
+namespace P25.NumberInRange1_100
 {
     internal class Program
     {

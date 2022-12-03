@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P21.NumbersPowerOf2
+namespace P27.Factoriel
 {
     internal class Program
     {
@@ -8,13 +8,12 @@ namespace P21.NumbersPowerOf2
         {
             var n = int.Parse(Console.ReadLine());
 
-            var power = 1;
-            for (int i = 0; i <= n; i++)
+            var lastNumValue = 1;
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine(power);
-                power *= 2;
+                lastNumValue *= i;
             }
+            Console.WriteLine(lastNumValue);
         }
     }
 }
-s
