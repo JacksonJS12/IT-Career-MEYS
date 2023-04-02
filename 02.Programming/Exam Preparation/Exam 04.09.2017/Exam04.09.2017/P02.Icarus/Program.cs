@@ -62,7 +62,7 @@ public class Program
             {
                 sequence[i] -= dmg;
             }
-
+             
             cmd = Console.ReadLine().Split();
         }
 
