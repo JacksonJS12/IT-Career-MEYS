@@ -11,7 +11,7 @@ public class Program
             int lengthEachWing = int.Parse(Console.ReadLine());
 
             double totalYears = Math.Pow(lengthBody, 2) * (widthBody + 2 * lengthEachWing);
-            Console.WriteLine(totalYears);
+            Console.WriteLine(totalYears); 
         }
     }
 }
