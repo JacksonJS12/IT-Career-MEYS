@@ -8,29 +8,25 @@ namespace RegularExam
 {
     internal class Flower
     {
-
         public Flower (string type, string color, double price)
         {
-             //TODO: Добавете вашия код тук …
+            if(price > 100) throw new ArgumentException("Invalid flower price!");
+            this.Type = type;
+             this.Color = color;
+             this.Price = price;
         }
         
-        public string  Type
-        {
-        }
+        public string Type { get; }
         
-        public string  Color
-        {
-        }
-        
-        
-        public double Price
-        {
-        }
-        
+        public string Color { get; }
+
+        public double Price { get; }
+
         public override string ToString()
         {
-            throw new NotImplementedException(); //премахнете този ред като добавите вашия код
-             //TODO: Добавете вашия код тук …
+            return 
+                $"Flower {this.Type} with color {this.Color} costs {this.Price:f2}."
+                .ToString();
         }
 
         
