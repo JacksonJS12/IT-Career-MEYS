@@ -13,8 +13,8 @@ namespace Program
 
         public SkateboardShop(string name)
         {
-            this.skateboards = new List<Skateboard>();
-            this.name = name;
+            this.Skateboards = new List<Skateboard>();
+            this.Name = name;
         }
 
         public string Name
@@ -80,12 +80,14 @@ namespace Program
 
         public List<Skateboard> SortAscendingByModel()
         {
-            return this.skateboards.OrderBy(s => s.Model).ToList();
+            this.Skateboards = this.Skateboards.OrderBy(s => s.Model).ToList();
+            return this.Skateboards;
         }
 
         public List<Skateboard> SortDescendingByPrice()
         {
-            return this.skateboards.OrderByDescending(s => s.Price).ToList();
+            this.Skateboards = this.Skateboards.OrderByDescending(s => s.Price).ToList();
+            return this.Skateboards;
         }
 
         public bool CheckSkateboardIsInShop(string model)

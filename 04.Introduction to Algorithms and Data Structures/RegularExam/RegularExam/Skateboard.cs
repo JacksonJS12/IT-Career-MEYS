@@ -19,14 +19,14 @@ namespace Program
         {
             get
             {
-               return this.model;
+                return this.model;
             }
             set
             {
-                //if (!(Regex.IsMatch(value, @"^[a-zA-Z]+$")))
-                //{
-                //    throw new ArgumentException("Wrong name!");
-                //}
+                if (!(Regex.IsMatch(value, @"^[a-zA-Z]+$")))
+                {
+                    throw new ArgumentException("Wrong name!");
+                }
                 this.model = value;
             }
         }
