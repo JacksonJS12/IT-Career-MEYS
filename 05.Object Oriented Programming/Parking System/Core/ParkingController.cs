@@ -14,8 +14,29 @@ internal class ParkingController
 
     public string CreateParkingSpot(List<string> args)
     {
-        //TODO: Implement me
-        throw new NotImplementedException();
+        int id = int.Parse(args[0]);
+        ParkingSpot existingParkingSpot = this.GetParkingSpotBy(id);
+
+        bool ocupied = bool.Parse(args[1]);
+        string type = args[2];
+        double price = double.Parse(args[3]);
+
+        if (type == "car")
+        {
+            CarParkingSpot carParkingSpot = new CarParkingSpot(id, ocupied, price);
+        }
+        else if (type == "bus")
+        {
+            BusParkingSpot busParkingSpot = new BusParkingSpot(id, ocupied, price);
+        }
+        else if (type == "subscription")
+        {
+            string registrationPlate = args[4];
+            SubscriptionParkingSpot subscriptionParkingSpot =
+                new SubscriptionParkingSpot(id, ocupied, price, registrationPlate);
+        }
+
+
     }
 
     public string ParkVehicle(List<string> args)
